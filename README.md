@@ -50,7 +50,7 @@ Main libraries used in this project:
 
   
 
-📂 File Structure
+## 📂 File Structure
 
 Emotion_Detection/
 ├── gui.py                                           # Main GUI application
