@@ -47,7 +47,7 @@ Main libraries used in this project:
 
 - tkinter
 
-
+---
   
 
 ## 📂 File Structure
@@ -61,7 +61,7 @@ Emotion_Detection/
 ├── requirements.txt                                 # Python dependencies
 └── README.md                                        # Project documentation
 
-
+---
 
 
 ## 👨‍💻 Author
@@ -69,6 +69,9 @@ Emotion_Detection/
 **Balaji M**  
 📧 Email: [balajim26114@gmail.com](mailto:balajim26114@gmail.com)  
 🔗 GitHub: [@Balaji-888](https://github.com/Balaji-888)
+
+
+----
 
 
 ⭐ Contribute & Support
