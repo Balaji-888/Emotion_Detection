@@ -1,2 +1,4 @@
 # Emotion_Detection
-This project is a simple yet powerful Emotion Detection System built with a Tkinter-based GUI and powered by a Convolutional Neural Network (CNN). It allows users to upload an image and detects the facial emotion displayed in the image.
+This project is a deep learning-powered emotion detection system that analyzes facial expressions from images and accurately classifies them into predefined emotional categories. Designed with a user-friendly interface using Tkinter, it allows users to upload images and instantly see the predicted emotion label.
+
+
