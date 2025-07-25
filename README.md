@@ -50,6 +50,7 @@ Main libraries used in this project:
 ---
   
 ## 📂 File Structure
+'''
 
 Emotion_Detection/
 ├── gui.py # Main GUI application
@@ -60,6 +61,7 @@ Emotion_Detection/
 ├── requirements.txt # Python dependencies
 └── README.md # Project documentation
 
+'''
 
 ## 👨‍💻 Author
 
