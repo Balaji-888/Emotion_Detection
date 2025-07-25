@@ -53,22 +53,22 @@ Main libraries used in this project:
 📂 File Structure
 
 Emotion_Detection/
-│
-├── gui.py                       # Main GUI application
-├── model_creation.ipynb         # Model training notebook (optional)
-├── model_a1.json                # Model architecture (CNN)
-├── model_weights1.h5            # Trained model weights
-├── haarcascade_frontalface_default.xml  # Haar Cascade for face detection
-├── requirements.txt             # Python dependencies
-└── README.md                    # Project documentation
+├── gui.py                                           # Main GUI application
+├── model_creation.ipynb                             # Model training notebook (optional)
+├── model_a1.json                                    # Model architecture (CNN)
+├── model_weights1.h5                                # Trained model weights
+├── haarcascade_frontalface_default.xml              # Haar Cascade for face detection
+├── requirements.txt                                 # Python dependencies
+└── README.md                                        # Project documentation
 
 
 
-👨‍💻 Author
-Balaji M
-📧 Mail : balajim26114@gmail.com 
-🔗 Github : @Balaji-888
 
+## 👨‍💻 Author
+
+**Balaji M**  
+📧 Email: [balajim26114@gmail.com](mailto:balajim26114@gmail.com)  
+🔗 GitHub: [@Balaji-888](https://github.com/Balaji-888)
 
 
 ⭐ Contribute & Support
