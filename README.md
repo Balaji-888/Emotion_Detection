@@ -20,11 +20,14 @@ Upload an image with a visible human face and click "Detect Emotion". The predic
 
 ---
 
+
 ## 🧠 Model Details
 
 - Model architecture: CNN
 - Trained using: FER-2013 dataset
 - Libraries used: TensorFlow, Keras, OpenCV, NumPy
+
+
 
 
 📝 Dependencies
@@ -43,6 +46,8 @@ Main libraries used in this project:
 - scikit-learn
 
 - tkinter
+
+
   
 
 📂 File Structure
@@ -58,10 +63,13 @@ Emotion_Detection/
 └── README.md                    # Project documentation
 
 
+
 👨‍💻 Author
 Balaji M
 📧 Mail : balajim26114@gmail.com 
 🔗 Github : @Balaji-888
+
+
 
 ⭐ Contribute & Support
 If you find this project helpful or interesting:
