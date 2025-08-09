@@ -95,9 +95,14 @@ Haarcascade_frontalface_default.xml
 
 
 📷 Sample Output
+
+
+
 1️⃣ Single Faces Detected
 
 <img width="993" height="781" alt="Screenshot 2025-08-09 120533" src="https://github.com/user-attachments/assets/d6629494-ce7e-46cd-9545-d59a11e6a7e0" />
+
+
 
 
 
