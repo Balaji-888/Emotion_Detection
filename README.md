@@ -34,7 +34,7 @@ This project is a deep learning-powered emotion detection system that analyzes f
 
 ## 🖥️ GUI Preview
 
-Upload an image with a visible human face and click "Detect Emotion". The predicted emotion will be displayed below the image.
+Upload an image with a visible human face and click "Detect Emotion". The predicted emotion will be displayed abovethe image.
 
 ---
 
@@ -43,21 +43,21 @@ Upload an image with a visible human face and click "Detect Emotion". The predic
 
 1. Clone the repository
 
-git clone https://github.com/your-username/Emotion_Detection.git
-cd Emotion_Detection
+  git clone https://github.com/your-username/Emotion_Detection.git
+  cd Emotion_Detection
 
 2. Create a virtual environment (recommended)
 
-python -m venv emotion_env
-emotion_env\Scripts\activate   # For Windows
-source emotion_env/bin/activate  # For Mac/Linux
+  python -m venv emotion_env
+  emotion_env\Scripts\activate   # For Windows
+  source emotion_env/bin/activate  # For Mac/Linux
 
 3. Install dependencies
 
-pip install -r requirements.txt
+  pip install -r requirements.txt
 
 4. Download Haar Cascade file (if not already included)
-Haarcascade_frontalface_default.xml
+  Haarcascade_frontalface_default.xml
 
 
 
@@ -122,7 +122,7 @@ Haarcascade_frontalface_default.xml
 
 
 📝 Dependencies
-Main libraries used in this project:
+ Main libraries used in this project:
 
 - tensorflow
 
@@ -162,11 +162,11 @@ Emotion_Detection/
 
 📌 Future Improvements
 
-Add real-time webcam emotion detection
+- Add real-time webcam emotion detection
 
-Deploy as a web app using Streamlit
+- Deploy as a web app using Streamlit
 
-Integrate with voice sentiment analysis for combined emotion detection.
+- Integrate with voice sentiment analysis for combined emotion detection.
 
 ---
 
