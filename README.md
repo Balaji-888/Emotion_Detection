@@ -15,6 +15,7 @@ This project is a deep learning-powered emotion detection system that analyzes f
 ---
 
 
+
 🚀 Features
 
 - Detects multiple faces and predicts each face's emotion individually.
@@ -29,11 +30,14 @@ This project is a deep learning-powered emotion detection system that analyzes f
 
 
 
+
+
 ## 🖥️ GUI Preview
 
 Upload an image with a visible human face and click "Detect Emotion". The predicted emotion will be displayed below the image.
 
 ---
+
 
 🛠️ Installation & Setup
 
@@ -56,7 +60,10 @@ pip install -r requirements.txt
 Haarcascade_frontalface_default.xml
 
 
+
 ---
+
+
 
 ▶️ Usage
 
@@ -74,6 +81,8 @@ Haarcascade_frontalface_default.xml
 
 5. The detected faces will be highlighted with predicted emotions.
 
+---
+
 
 
 ## 🧠 Model Details
@@ -81,6 +90,28 @@ Haarcascade_frontalface_default.xml
 - Model architecture: CNN
 - Trained using: FER-2013 dataset
 - Libraries used: TensorFlow, Keras, OpenCV, NumPy
+
+---
+
+
+📷 Sample Output
+1️⃣ Single Faces Detected
+
+<img width="993" height="781" alt="Screenshot 2025-08-09 120533" src="https://github.com/user-attachments/assets/d6629494-ce7e-46cd-9545-d59a11e6a7e0" />
+
+
+
+
+
+
+2️⃣ Multiple Face Detected
+
+
+<img width="995" height="776" alt="Screenshot 2025-08-09 114847" src="https://github.com/user-attachments/assets/95bf355c-cf5d-43ab-8858-162945448263" />
+
+
+
+---
 
 
 
@@ -102,7 +133,11 @@ Main libraries used in this project:
 
 - tkinter
 
+
 ---
+
+
+
   
 ## 📂 File Structure
 ```
@@ -119,6 +154,7 @@ Emotion_Detection/
 ```
 
 
+
 📌 Future Improvements
 
 Add real-time webcam emotion detection
@@ -126,6 +162,9 @@ Add real-time webcam emotion detection
 Deploy as a web app using Streamlit
 
 Integrate with voice sentiment analysis for combined emotion detection.
+
+---
+
 
 
 ## 👨‍💻 Author
@@ -136,6 +175,7 @@ Integrate with voice sentiment analysis for combined emotion detection.
 
 
 ----
+
 
 
 ⭐ Contribute & Support
