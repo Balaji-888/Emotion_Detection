@@ -38,48 +38,39 @@ model = FacialExpressionModel("model_a1.json","model_weights1.h5")
 EMOTIONS_LIST = ["Angry","Disgust","Fear","Happy","Neutral","Sad","Surprise"]
 
 def Detect(file_path):
-    global Label_packed
-
     image = cv2.imread(file_path)
     gray_image = cv2.cvtColor(image, cv2.COLOR_BGR2GRAY)
+    faces = facec.detectMultiScale(gray_image, 1.3, 5)
 
-    faces = facec.detectMultiScale(
-        gray_image,
-        scaleFactor=1.1,
-        minNeighbors=8,
-        minSize=(80, 80),
-        flags=cv2.CASCADE_SCALE_IMAGE
-    )
+    emotions_detected = []
 
-    print(f"Faces detected: {len(faces)}")
+    for (x, y, w, h) in faces:
+        fc = gray_image[y:y + h, x:x + w]
+        roi = cv2.resize(fc, (48, 48))
+        roi = roi[np.newaxis, :, :, np.newaxis]
+        prediction = model.predict(roi)
+        pred = EMOTIONS_LIST[np.argmax(prediction)]
+        print(f"Detected Emotion for face at ({x},{y}):", pred)
+        emotions_detected.append(pred)
 
-    if len(faces) == 0:
-        label1.configure(foreground="#011638", text="No face detected.")
-        print("No face detected.")
-        return
+        # Draw on image
+        cv2.rectangle(image, (x, y), (x + w, y + h), (255, 0, 0), 2)
+        cv2.putText(image, pred, (x, y - 10), cv2.FONT_HERSHEY_SIMPLEX,
+                    0.8, (0, 255, 0), 2)
 
-    try:
-        for (x, y, w, h) in faces:
-            fc = gray_image[y:y + h, x:x + w]
+    # Display updated image in GUI
+    image_rgb = cv2.cvtColor(image, cv2.COLOR_BGR2RGB)
+    im_pil = Image.fromarray(image_rgb)
+    im_pil.thumbnail(((top.winfo_width()/2.25), (top.winfo_height()/2.25)))
+    im_tk = ImageTk.PhotoImage(im_pil)
 
-            # validate detected face quality
-            if np.std(fc) < 20:
-                label1.configure(foreground="#011638", text="Detected face seems invalid.")
-                print("Low contrast face area")
-                return
+    sign_image.configure(image=im_tk)
+    sign_image.image = im_tk
 
-            roi = cv2.resize(fc, (48, 48))
-            roi = roi[np.newaxis, :, :, np.newaxis]
-
-            pred_idx = np.argmax(model.predict(roi))
-            pred = EMOTIONS_LIST[pred_idx]
-            print("Predicted Emotion is " + pred)
-            label1.configure(foreground="#011638", text=pred)
-            return
-    except Exception as e:
-        print("Error during prediction:", e)
-        label1.configure(foreground="#011638", text="Error in detecting emotion.")
-
+    if emotions_detected:
+        label1.configure(foreground="#011638", text="Detected Emotions: " + ", ".join(emotions_detected))
+    else:
+        label1.configure(foreground="#011638", text="No faces detected")
 
 
 
