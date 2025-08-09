@@ -11,14 +11,69 @@ This project is a deep learning-powered emotion detection system that analyzes f
 - 🧠 Predicts one of 7 emotions: "Angry", "Disgust", "Fear", "Happy", "Neutral", "Sad", "Surprise".
 - 💡 Easy-to-use Python GUI application using Tkinter.
 - ✅ Offline execution – no need for internet after setup.
-
+- 👥 It supports Single face detection and Multiple face detection in a single image.u
 ---
+
+
+🚀 Features
+
+- Detects multiple faces and predicts each face's emotion individually.
+
+- Draws bounding boxes with emotion labels on detected faces.
+
+- Supports JPG, PNG, and other common image formats.
+
+- Works offline, no internet connection required.
+
+- Easy-to-use GUI for uploading and testing images.
+
+
 
 ## 🖥️ GUI Preview
 
 Upload an image with a visible human face and click "Detect Emotion". The predicted emotion will be displayed below the image.
 
 ---
+
+🛠️ Installation & Setup
+
+1. Clone the repository
+
+git clone https://github.com/your-username/Emotion_Detection.git
+cd Emotion_Detection
+
+2. Create a virtual environment (recommended)
+
+python -m venv emotion_env
+emotion_env\Scripts\activate   # For Windows
+source emotion_env/bin/activate  # For Mac/Linux
+
+3. Install dependencies
+
+pip install -r requirements.txt
+
+4. Download Haar Cascade file (if not already included)
+Haarcascade_frontalface_default.xml
+
+
+---
+
+▶️ Usage
+
+1. Run the GUI:
+     python gui.py
+
+2. Click Upload Image in the GUI.
+
+
+3. Select an image with a face/faces.
+
+
+4. Click Detect Emotion.
+
+
+5. The detected faces will be highlighted with predicted emotions.
+
 
 
 ## 🧠 Model Details
@@ -62,6 +117,16 @@ Emotion_Detection/
 └── README.md # Project documentation
 
 ```
+
+
+📌 Future Improvements
+
+Add real-time webcam emotion detection
+
+Deploy as a web app using Streamlit
+
+Integrate with voice sentiment analysis for combined emotion detection.
+
 
 ## 👨‍💻 Author
 
